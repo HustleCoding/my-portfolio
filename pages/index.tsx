@@ -1,13 +1,22 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import Head from "next/head";
+import Header from "../components/Header";
+import Introduction from "../components/Introduction";
+import Skills from "../components/Skills";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">About</Link>
-    </p>
-  </Layout>
-)
-
-export default IndexPage
+export default function Home() {
+  return (
+    <div className="bg-gray-100 min-h-screen">
+      <Head>
+        <title>Florin Dobinciuc | Resume</title>
+        <link rel="icon" href="/favicon.svg" />
+      </Head>
+      <Header />
+      <Introduction />
+      <Skills />
+      <Contact />
+      <Footer />
+    </div>
+  );
+}
