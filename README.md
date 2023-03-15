@@ -1,47 +1,54 @@
-# TypeScript Next.js example
+# My Portfolio
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+This is a personal portfolio website built using Next.js, TypeScript, and TailwindCSS. It showcases my skills, projects, and experience as a Full Stack Developer.
 
-## Deploy your own
+## Live Demo
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
+You can visit the live demo of this portfolio website at: https://your-portfolio.vercel.app/
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+_Replace the URL with the actual URL provided by Vercel after deployment._
 
-## How to use it?
+## Features
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+- Responsive design with TailwindCSS
+- Static Site Generation with Next.js
+- TypeScript for type safety and better development experience
+- Continuous deployment with Vercel
+
+## Getting Started
+
+Follow these steps to run the project locally:
+
+### Prerequisites
+
+- Node.js (LTS version)
+- npm (comes bundled with Node.js)
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npx create-next-app --example with-typescript with-typescript-app
+git clone https://github.com/YOUR_GITHUB_USERNAME/my-portfolio.git
 ```
 
-```bash
-yarn create next-app --example with-typescript with-typescript-app
-```
+Replace YOUR_GITHUB_USERNAME with your actual GitHub username.
 
-```bash
-pnpm create next-app --example with-typescript with-typescript-app
-```
+Change to the project directory:
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+cd my-portfolio
+Install the dependencies:
 
-## Notes
+npm install
+Start the development server:
 
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+npm run dev
+Open your browser and visit http://localhost:3000 to see the website.
+Deployment
+This project is set up for continuous deployment with Vercel. To deploy your own instance, follow these steps:
 
-```
-npm install --save-dev typescript
-```
-
-To enable TypeScript's features, we install the type declarations for React and Node.
-
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
-
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+Push your code to a new GitHub repository.
+Create a Vercel account and link it to your GitHub account.
+Import the GitHub repository on your Vercel dashboard and deploy the project.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
