@@ -6,8 +6,6 @@ This is a personal portfolio website built using Next.js, TypeScript, and Tailwi
 
 You can visit the live demo of this portfolio website at: https://your-portfolio.vercel.app/
 
-_Replace the URL with the actual URL provided by Vercel after deployment._
-
 ## Features
 
 - Responsive design with TailwindCSS
@@ -29,26 +27,7 @@ Follow these steps to run the project locally:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/my-portfolio.git
+git clone https://github.com/HustleCoding/my-portfolio.git
 ```
 
-Replace YOUR_GITHUB_USERNAME with your actual GitHub username.
-
-Change to the project directory:
-
-cd my-portfolio
-Install the dependencies:
-
-npm install
-Start the development server:
-
-npm run dev
-Open your browser and visit http://localhost:3000 to see the website.
-Deployment
-This project is set up for continuous deployment with Vercel. To deploy your own instance, follow these steps:
-
-Push your code to a new GitHub repository.
-Create a Vercel account and link it to your GitHub account.
-Import the GitHub repository on your Vercel dashboard and deploy the project.
-License
 This project is licensed under the MIT License - see the LICENSE file for details.
