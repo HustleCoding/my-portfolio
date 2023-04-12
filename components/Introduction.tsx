@@ -11,7 +11,7 @@ const Introduction: React.FC = () => {
       <h2 className="text-4xl font-bold mb-4">Florin Dobinciuc</h2>
       <h3 className="text-2xl font-semibold mb-6">Frontend Developer</h3>
       <p className="leading-loose max-w-xl mx-auto">
-        👋 Dedicated Frontend Developer with a strong foundation in JavaScript programming language. 
+        👋Dedicated Frontend Developer with a strong foundation in JavaScript programming language. 
         Passionate about continuous learning
         and staying up-to-date with industry best practices to ensure delivering
         high-quality software solutions.
