@@ -8,7 +8,7 @@ import Projects from "../components/Projects";
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-100 min-h-screen dynamic-gradient">
       <Head>
         <title>Florin Dobinciuc | Resume</title>
         <link rel="icon" href="/favicon.svg" />
@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <Introduction />
       <Skills />
-      <Projects />
+      {/*<Projects />*/}
       <Contact />
       <Footer />
     </div>

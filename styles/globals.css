@@ -1,3 +1,62 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.dynamic-gradient {
+    background: linear-gradient(132deg, #003366, #33cccc, rgba(111, 19, 192, 0.56));
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.bg-blue-dark {
+    background-color: #003366;
+}
+
+.bg-cyan-light {
+    background-color: rgba(51, 204, 204, 0.1);
+}
+
+a, button {
+    transition: font-size 0.3s ease;
+}
+
+a:hover, button:hover {
+    font-size: 1.1em;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #003366;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background: linear-gradient(132deg, #003366, #33cccc, rgba(111, 19, 192, 0.56));
+    animation: gradient 5s ease infinite;
+}
+
+
+
+
