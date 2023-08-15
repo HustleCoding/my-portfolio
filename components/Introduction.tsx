@@ -2,19 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Introduction: React.FC = () => {
-  const variants = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
-  };
-
   return (
-    <motion.section
-      className="py-12 px-4 text-center bg-blue-dark text-white"
-      initial="hidden"
-      animate="visible"
-      variants={variants}
-      transition={{ ease: "easeOut", duration: 0.8 }}
-    >
+    <section className="py-12 px-4 text-center bg-blue-dark text-white">
       <motion.img
         src="/profile.jpeg"
         alt="Profile"
@@ -28,14 +17,13 @@ const Introduction: React.FC = () => {
         Frontend Developer
       </h3>
       <p className="leading-loose max-w-xl mx-auto text-white">
-        👋 Dedicated Frontend Developer with a strong foundation in JavaScript
-        programming language. Passionate about continuous learning and staying
-        up-to-date with industry best practices to ensure delivering
-        high-quality software solutions.
+        👋 Frontend Developer skilled in JavaScript and dedicated to continuous
+        learning. I adhere to industry best practices to consistently deliver
+        top-notch software solutions.
       </p>
       <br />
-      <p>Take a look at my skills below.</p>
-    </motion.section>
+      <p>Discover my skills below.</p>
+    </section>
   );
 };
 
