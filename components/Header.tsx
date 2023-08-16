@@ -14,9 +14,6 @@ const Header: React.FC = () => {
           <nav>
             <ul className="flex space-x-8">
               <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
                 <Link href="/blog">Blog</Link>
               </li>
             </ul>
