@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const UtterancesComments: React.FC = () => {
+  const commentsContainerRef = useRef(null);
   const REPO_NAME = "HustleCoding/my-portfolio";
 
-  React.useEffect(() => {
-    const script = document.createElement("script");
+  useEffect(() => {
+    const scriptParentNode = commentsContainerRef.current;
+    if (!scriptParentNode) return;
+
+    const existingScript = Array.from(scriptParentNode.childNodes).find(
+      (child: any) => child.tagName === "SCRIPT"
+    );
+
+    if (existingScript) return;
+
+    let script = document.createElement("script");
     script.src = "https://utteranc.es/client.js";
     script.async = true;
     script.crossOrigin = "anonymous";
@@ -12,20 +22,10 @@ const UtterancesComments: React.FC = () => {
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
 
-    const scriptParentNode = document.getElementById("utterances-container");
-
-    if (scriptParentNode) {
-      scriptParentNode.appendChild(script);
-    }
-
-    return () => {
-      if (scriptParentNode) {
-        scriptParentNode.removeChild(script);
-      }
-    };
+    scriptParentNode.appendChild(script);
   }, []);
 
-  return <div id="utterances-container"></div>;
+  return <div ref={commentsContainerRef}></div>;
 };
 
 export default UtterancesComments;
