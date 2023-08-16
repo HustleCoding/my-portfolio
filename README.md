@@ -4,18 +4,16 @@ This is a personal portfolio website built using Next.js, TypeScript, and Tailwi
 
 ## Live Demo
 
-You can visit the live demo of this portfolio website at: https://florin.website/
+You can visit the live demo of this portfolio website at: [https://florin.website/](https://florin.website/)
 
 ## Features
 
-- Responsive design with TailwindCSS
-- Static Site Generation with Next.js
-- TypeScript for type safety and better development experience
-- Continuous deployment with Vercel
+- **Responsive Design**: Ensuring a seamless user experience across devices using TailwindCSS.
+- **Static Site Generation**: Leverage the benefits of static site generation with Next.js for faster load times.
+- **Type Safety**: Utilizing TypeScript for a safer and more predictable development experience.
+- **Continuous Deployment**: Deployments made easy and continuous with Vercel.
 
 ## Getting Started
-
-Follow these steps to run the project locally:
 
 ### Prerequisites
 
@@ -24,10 +22,28 @@ Follow these steps to run the project locally:
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/HustleCoding/my-portfolio.git
+    ```
 
-```bash
-git clone https://github.com/HustleCoding/my-portfolio.git
-```
+2. **Navigate into the directory**:
+    ```bash
+    cd my-portfolio
+    ```
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+3. **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+4. **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+Visit `http://localhost:3000` in your browser to view the app.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
