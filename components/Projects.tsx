@@ -2,11 +2,13 @@ import React from "react";
 
 const Projects: React.FC = () => {
   return (
-    <section className="py-12">
+    <section className="py-12 bg-cyan-light text-blue-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 text-blue-dark">
+          Projects
+        </h2>
         <div className="flex justify-center">
-          <div className="bg-white shadow-lg rounded-lg w-full max-w-md">
+          <div className="bg-white shadow-lg rounded-lg w-full max-w-md shadow-33cccc">
             <img
               src="/ai.png"
               alt="Project 1"
@@ -14,7 +16,7 @@ const Projects: React.FC = () => {
             />
             <div className="p-6">
               <h3 className="text-2xl font-semibold mb-4">Open AI Chat</h3>
-              <p>
+              <p className="text-blue-dark">
                 A brief description of Open AI Chat. This project uses Next.js,
                 Node.js, TailwindCSS, and OpenAI API. More information can be
                 found in the README file.

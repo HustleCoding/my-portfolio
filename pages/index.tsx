@@ -4,19 +4,18 @@ import Introduction from "../components/Introduction";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Projects from "../components/Projects";
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-100 min-h-screen dynamic-gradient">
       <Head>
-        <title>Florin Dobinciuc | Resume</title>
+        <title>Florin Dobinciuc | Personal Website</title>
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header />
       <Introduction />
       <Skills />
-      <Projects />
+      {/*<Projects />*/}
       <Contact />
       <Footer />
     </div>

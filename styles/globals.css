@@ -1,3 +1,146 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.dynamic-gradient {
+    background: linear-gradient(132deg, #003366, #33cccc, rgba(111, 19, 192, 0.56));
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.bg-blue-dark {
+    background-color: #003366;
+}
+
+.bg-cyan-light {
+    background-color: rgba(51, 204, 204, 0.1);
+}
+
+a, button {
+    transition: font-size 0.3s ease;
+}
+
+a:hover, button:hover {
+    font-size: 1.1em;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #003366;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background: linear-gradient(132deg, #003366, #33cccc, rgba(111, 19, 192, 0.56));
+    animation: gradient 5s ease infinite;
+}
+
+/* Blog Card */
+.blog-card {
+    @apply bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105;
+}
+
+.blog-card img {
+    @apply w-full h-48 object-cover;
+}
+
+.blog-card-content {
+    @apply p-6;
+}
+
+.blog-title {
+    @apply text-2xl font-bold mb-2 hover:text-blue-500 transition-colors;
+}
+
+.blog-excerpt {
+    @apply text-gray-600;
+}
+
+.blog-date {
+    @apply text-sm text-gray-400 mt-4;
+}
+
+
+/* Blog Post */
+.post-title {
+    @apply text-4xl font-bold mb-6;
+}
+
+.post-metadata {
+    @apply text-gray-500 mb-8;
+}
+
+.post-content {
+    @apply text-gray-800 leading-relaxed;
+}
+
+.post-content h2, .post-content h3 {
+    @apply mt-8 mb-4 font-bold;
+}
+
+.post-content h2 {
+    @apply text-3xl;
+}
+
+.post-content h3 {
+    @apply text-2xl;
+}
+
+.post-content p {
+    @apply mb-6;
+}
+
+.post-content a {
+    @apply text-blue-500 hover:underline;
+}
+
+.post-content blockquote {
+    @apply border-l-4 border-blue-500 pl-4 italic text-gray-700;
+}
+
+.post-content ul, .post-content ol {
+    @apply mb-6 pl-8;
+}
+
+.post-content li {
+    @apply mb-2;
+}
+
+.post-content img {
+    @apply max-w-full h-auto mb-6;
+}
+
+.post-content code {
+    @apply bg-gray-100 p-1 rounded;
+}
+
+.post h1, .post h2, .post h3 {
+    margin-bottom: 1rem;
+}
+
+.post p {
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
