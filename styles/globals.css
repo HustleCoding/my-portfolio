@@ -35,12 +35,6 @@ a:hover, button:hover {
     font-size: 1.1em;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
 .download-btn {
     display: inline-block;
     padding: 8px 16px;
@@ -135,6 +129,15 @@ header {
 .post-content code {
     @apply bg-gray-100 p-1 rounded;
 }
+
+.post h1, .post h2, .post h3 {
+    margin-bottom: 1rem;
+}
+
+.post p {
+    margin-bottom: 1.5rem;
+}
+
 
 
 

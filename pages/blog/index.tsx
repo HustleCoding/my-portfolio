@@ -3,6 +3,8 @@ import { getPosts, PostMetadata } from "../../utils/getPosts";
 import React from "react";
 import Link from "next/link";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import Head from "next/head";
 
 type BlogProps = {
   posts: PostMetadata[];
@@ -19,6 +21,10 @@ export const getStaticProps: GetStaticProps<BlogProps> = async () => {
 
 const Blog: React.FC<BlogProps> = ({ posts }) => (
   <div>
+    <Head>
+      <title>Florin Dobinciuc | Blog</title>
+      <link rel="icon" href="/favicon.svg" />
+    </Head>
     <Header />
     <div className="bg-white min-h-screen pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -38,6 +44,7 @@ const Blog: React.FC<BlogProps> = ({ posts }) => (
         ))}
       </div>
     </div>
+    <Footer className="bg-[#003366]" />
   </div>
 );
 

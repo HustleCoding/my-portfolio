@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen dynamic-gradient">
       <Head>
-        <title>Florin Dobinciuc | Resume</title>
+        <title>Florin Dobinciuc | Personal Website</title>
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header />
