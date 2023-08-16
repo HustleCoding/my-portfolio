@@ -19,6 +19,9 @@ const Header: React.FC = () => {
             <li>
               <Link href="/blog">Blog</Link>
             </li>
+            <li>
+              <Link href="/gumroad-products">FREE Gumroad Products</Link>
+            </li>
           </ul>
         </nav>
 
@@ -39,6 +42,9 @@ const Header: React.FC = () => {
             <ul className="flex flex-col space-y-2">
               <li>
                 <Link href="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link href="/gumroad-products">FREE Gumroad Products</Link>
               </li>
             </ul>
           </nav>
