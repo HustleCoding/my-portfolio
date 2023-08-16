@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import DownloadButton from "./DownloadButton";
 
 const Contact: React.FC = () => {
   const iconVariants = {
@@ -12,7 +13,7 @@ const Contact: React.FC = () => {
 
   return (
     <section className="py-12 bg-blue-dark text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center">
         <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
         <p className="text-center mb-8">
           If you'd like to get in touch, feel free to reach out to me via email
@@ -52,6 +53,10 @@ const Contact: React.FC = () => {
           >
             <FontAwesomeIcon icon={faGithub} />
           </motion.a>
+        </div>
+        <div className="text-center mt-6">
+          {" "}
+          <DownloadButton />
         </div>
       </div>
     </section>
