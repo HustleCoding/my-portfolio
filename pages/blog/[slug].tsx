@@ -10,6 +10,7 @@ import { MDXRemote } from "next-mdx-remote";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Head from "next/head";
+import UtterancesComments from "../../components/UtterancesComments";
 
 type PostProps = {
   content: string;
@@ -55,10 +56,11 @@ const PostPage: React.FC<PostProps> = ({ mdxContent, metadata }) => (
     <Header />
     <div className="max-w-2xl mx-auto mt-12 px-4 mb-6">
       <h1 className="text-4xl font-semibold mb-4">{metadata.title}</h1>
-      <p className="text-gray-500 italic mb-8">{metadata.date}</p>
-      <div className="prose prose-blue md:prose-lg">
+      <p className="text-gray-500 italic mb-4">{metadata.date}</p>
+      <div className="prose prose-blue md:prose-lg mb-4">
         <MDXRemote {...mdxContent} />
       </div>
+      <UtterancesComments />
     </div>
     <Footer className="bg-[#003366]" />
   </div>

@@ -47,6 +47,11 @@
   dependencies:
     prop-types "^15.8.1"
 
+"@heroicons/react@v1":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-1.0.6.tgz#35dd26987228b39ef2316db3b1245c42eb19e324"
+  integrity sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==
+
 "@mdx-js/loader@^2.3.0":
   version "2.3.0"
   resolved "https://registry.npmjs.org/@mdx-js/loader/-/loader-2.3.0.tgz"
