@@ -4,6 +4,7 @@ import Introduction from "../components/Introduction";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import ThreeDCube from "../components/ThreeDCube";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
         <title>Florin Dobinciuc | Personal Website</title>
         <link rel="icon" href="/favicon.svg" />
       </Head>
+
       <Header />
+      <ThreeDCube />
       <Introduction />
       <Skills />
       {/*<Projects />*/}
